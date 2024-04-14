@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/signupback"
+    tools:context=".splashAndOnboarding.ObjectiveActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_60sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:fontFamily="@font/source_sans_pro_regular"
+        android:text="What’s your objective to use GyanBatua ?"
+        android:textColor="@color/headingColor"
+        android:textSize="@dimen/_20ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:id="@+id/jobseeker_layout"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:background="@drawable/edittext_background"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:id="@+id/jobseeker_heading"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:text="Register as a job\nseeker/learner"
+                android:textColor="@color/headingColor"
+                android:textSize="@dimen/_16ssp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/jobseeker_subheading"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:text="Get access to global hiring\nopportunities and best courses"
+                android:textColor="@color/edittexthintcolor"
+                android:textSize="@dimen/_11ssp" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="157dp"
+            android:layout_marginRight="2dp"
+            android:src="@drawable/register_as_learner" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/organization_layout"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:background="@drawable/edittext_background"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jobseeker_layout"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp"
+            android:layout_weight="1"
+            android:paddingBottom="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:id="@+id/organization_heading"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:text="Register as an\norganizaion"
+                android:textColor="@color/headingColor"
+                android:textSize="@dimen/_16ssp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:text="Hire the best talent, be \npart of I and AI-CoEs"
+                android:textColor="@color/edittexthintcolor"
+                android:id="@+id/organization_subheading"
+                android:textSize="@dimen/_11ssp" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:src="@drawable/register_as_organization" />
+
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/getStartedBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:background="@drawable/onboard_signup_bn_background"
+        android:fontFamily="@font/source_sans_pro_regular"
+        android:text="Get started"
+        android:visibility="gone"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

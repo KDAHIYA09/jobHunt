@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/list_item_back">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToOutline="true"
+            android:clipChildren="true"
+            android:gravity="center"
+            android:background="@drawable/image_back2">
+
+            <ImageView
+                android:id="@+id/new_blog_image"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:clipToOutline="true"
+                android:src="@drawable/new_blog"
+                tools:ignore="ImageContrastCheck" />
+
+        </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/blog_genera1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/custom_blog_text_back"
+            android:fontFamily="@font/source_sans_pro_regular"
+            android:padding="5dp"
+            android:text="Design Principles"
+            android:textColor="@color/headingColor"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/blog_genera2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_blog_text_back"
+            android:fontFamily="@font/source_sans_pro_regular"
+            android:padding="5dp"
+            android:text="Technology"
+            android:layout_toEndOf="@id/blog_genera1"
+            android:textColor="@color/headingColor"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/save_bookmark"
+            android:id="@+id/save_blog_bookmark"
+            android:layout_alignParentEnd="true"/>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="How to build best products"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/source_sans_pro_regular"
+        android:textColor="@color/headingColor"
+        android:textSize="18sp"
+        android:paddingTop="3dp"
+        android:paddingBottom="5dp"
+        android:id="@+id/blog_title"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lorem ipsum dolor sit amet, consectetur adip isci ng eli t, sed do eiusm od tem por incid..."
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingBottom="3dp"
+        android:fontFamily="@font/source_sans_pro_regular"
+        android:textSize="14sp"
+        android:id="@+id/blog_description"
+        android:textColor="@color/edittexthintcolor"/>
+
+
+
+
+</LinearLayout>

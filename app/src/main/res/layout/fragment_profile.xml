@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dashboard_child_fragment.ProfileFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/photo"
+                android:layout_marginBottom="15dp"
+                android:id="@+id/dashboard_profile_picture"
+                android:padding="2dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingTop="5dp"
+                android:layout_toRightOf="@+id/dashboard_profile_picture"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dashboard_user_name"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/headingColor"
+                    android:text="Khushbu"
+                    android:fontFamily="@font/source_sans_pro_regular"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dashboard_user_occupation"
+                    android:textSize="16sp"
+                    android:textColor="@color/headingColor"
+                    android:text="Android developer"
+                    android:fontFamily="@font/source_sans_pro_regular"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dashboard_user_address"
+                    android:textSize="16sp"
+                    android:textColor="@color/headingColor"
+                    android:text="New Delhi"
+                    android:fontFamily="@font/source_sans_pro_regular"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentEnd="true"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/edit_01"
+                    android:id="@+id/dashboard_edit_profile"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/share_07"
+                    android:id="@+id/dashboard_share_profile"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dotted_line"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/l1"
+                android:layout_below="@+id/dashboard_profile_picture"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Resume"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/headingColor"
+                android:id="@+id/resumetxt"
+                android:layout_below="@+id/l1"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_add_24"
+                android:id="@+id/add_resume"
+                android:layout_below="@+id/l1"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_alignParentRight="true"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/resumerv"
+                android:layout_below="@id/resumetxt"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dotted_line"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/l2"
+                android:layout_below="@+id/resumerv"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Experience"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/headingColor"
+                android:id="@+id/expereiencetxt"
+                android:layout_below="@+id/l2"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_add_24"
+                android:id="@+id/add_expereience"
+                android:layout_below="@+id/l2"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_alignParentRight="true"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/expereiencerv"
+                android:layout_below="@id/expereiencetxt"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dotted_line"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/l3"
+                android:layout_below="@+id/expereiencerv"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Skills"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/headingColor"
+                android:id="@+id/skillstxt"
+                android:layout_below="@+id/l3"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_add_24"
+                android:id="@+id/add_skills"
+                android:layout_below="@+id/l3"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_alignParentRight="true"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/skillsrv"
+                android:layout_below="@id/skillstxt"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dotted_line"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/l4"
+                android:layout_below="@+id/skillsrv"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Education"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/headingColor"
+                android:id="@+id/educationtxt"
+                android:layout_below="@+id/l4"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_add_24"
+                android:id="@+id/add_education"
+                android:layout_below="@+id/l4"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_alignParentRight="true"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/educationsrv"
+                android:layout_below="@id/educationtxt"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>

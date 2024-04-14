@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/edittext_background">
+
+    <TextView
+        android:id="@+id/attendence_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Purchased course"
+        android:textColor="@color/headingColor"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/attendence_video_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="12/02/24"
+        android:textColor="@color/headingColor"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/attendence_date"
+        app:layout_constraintTop_toBottomOf="@+id/attendence_date" />
+
+    <TextView
+        android:id="@+id/attendence_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Duration"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/attendence_video_no"
+        app:layout_constraintTop_toBottomOf="@+id/attendence_video_no" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

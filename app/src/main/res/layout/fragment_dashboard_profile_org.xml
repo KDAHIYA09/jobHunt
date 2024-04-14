@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".organization.childFragment.dashboardProfileOrgFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/photo"
+        android:layout_marginBottom="15dp"
+        android:id="@+id/dashboard_profile_picture"
+        android:padding="2dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingTop="5dp"
+        android:layout_toRightOf="@+id/dashboard_profile_picture"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dashboard_user_name"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/headingColor"
+            android:text="Khushbu"
+            android:fontFamily="@font/source_sans_pro_regular"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dashboard_user_occupation"
+            android:textSize="16sp"
+            android:textColor="@color/headingColor"
+            android:text="Hiring Manager"
+            android:fontFamily="@font/source_sans_pro_regular"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dashboard_user_address"
+            android:textSize="16sp"
+            android:textColor="@color/headingColor"
+            android:text="Amazon"
+            android:fontFamily="@font/source_sans_pro_regular"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentEnd="true"
+        android:padding="5dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/edit_01"
+            android:id="@+id/dashboard_edit_profile"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/share_07"
+            android:id="@+id/dashboard_share_profile"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dotted_line"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/l1"
+        android:layout_below="@+id/dashboard_profile_picture"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

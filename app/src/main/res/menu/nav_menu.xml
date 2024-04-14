@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:showIn="navigation_view">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/side_menu_one"
+            app:iconTint="@color/primary"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_Courses"
+            android:icon="@drawable/side_menu_two"
+            app:actionLayout="@layout/custom_nav_back"
+            android:title="Courses"/>
+
+        <item
+            android:id="@+id/nav_CoursesExplore"
+            android:visible="false"
+            android:title="Explore"/>
+
+        <item
+            android:id="@+id/nav_CoursesOngoing"
+            android:visible="false"
+            android:title="Ongoing"/>
+
+        <item
+            android:id="@+id/nav_CoursesSaved"
+            android:title="Saved"
+            android:visible="false"/>
+        <item
+            android:id="@+id/nav_Jobs"
+            android:icon="@drawable/side_menu_three"
+            app:actionLayout="@layout/custom_nav_back"
+            android:title="Jobs"/>
+
+        <item
+            android:id="@+id/nav_JobsExplore"
+            android:visible="false"
+            android:title="Explore"/>
+
+        <item
+            android:id="@+id/nav_JobsApplied"
+            android:visible="false"
+            android:title="Applied"/>
+
+        <item
+            android:id="@+id/nav_JobsSaved"
+            android:visible="false"
+            android:title="Saved"/>
+
+        <item
+            android:id="@+id/nav_Blogs"
+            android:icon="@drawable/side_menu_four"
+            app:actionLayout="@layout/custom_nav_back"
+            android:title="Blogs"/>
+
+        <item
+            android:id="@+id/nav_BlogsExplore"
+            android:visible="false"
+            android:title="Explore"/>
+
+        <item
+            android:id="@+id/nav_BlogsSaved"
+            android:visible="false"
+            android:title="Saved"/>
+        <item
+            android:id="@+id/nav_Saved"
+            android:icon="@drawable/side_menu_five"
+            app:actionLayout="@layout/custom_nav_back"
+            android:title="Saved"/>
+
+        <item
+            android:id="@+id/nav_SavedCourses"
+            android:visible="false"
+            android:title="Courses"/>
+
+        <item
+            android:id="@+id/nav_SavedJobs"
+            android:visible="false"
+            android:title="Jobs"/>
+
+        <item
+            android:id="@+id/nav_SavedBlogs"
+            android:visible="false"
+            android:title="Blogs"/>
+
+        <item
+            android:id="@+id/nav_Dashboard"
+            android:icon="@drawable/side_menu_six"
+            app:actionLayout="@layout/custom_nav_back"
+            android:title="Dashboard"/>
+
+        <item
+            android:id="@+id/nav_DashboardProfile"
+            android:visible="false"
+            android:title="Profile"/>
+
+        <item
+            android:id="@+id/nav_DashboardWallet"
+            android:visible="false"
+            android:title="Wallet"/>
+
+        <item
+            android:id="@+id/nav_DashboardBadges"
+            android:visible="false"
+            android:title="Badges"/>
+
+        <item
+            android:id="@+id/nav_DashboardAttendance"
+            android:visible="false"
+            android:title="Attendance"/>
+
+        <item
+            android:id="@+id/nav_DashboardHelpcentre"
+            android:visible="false"
+            android:title="Help centre"/>
+
+        <item
+            android:id="@+id/nav_DashboardNotifications"
+            android:visible="false"
+            android:title="Notifications"/>
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/side_menu_logout"
+            android:iconTint="@color/errorColor"
+            android:title="Logout"/>
+
+
+
+    </menu>
+

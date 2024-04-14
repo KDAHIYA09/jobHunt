@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/signupback"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".jobseeker.fragment.DashboardFragment2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:id="@+id/header"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/dashboard_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/source_sans_pro_regular"
+                    android:padding="15dp"
+                    android:background="@drawable/edittext_background"
+                    android:text="Profile"
+                    android:textStyle="bold"
+                    android:textColor="@color/headingColor"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/dashboard_wallet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/source_sans_pro_regular"
+                    android:padding="15dp"
+                    android:text="Wallet"
+                    android:layout_toEndOf="@id/dashboard_profile"
+                    android:textColor="@color/headingColor"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/dashboard_badges"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/source_sans_pro_regular"
+                    android:padding="15dp"
+                    android:text="Badges"
+                    android:layout_toEndOf="@id/dashboard_wallet"
+                    android:textColor="@color/headingColor"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/dashboard_Help"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/source_sans_pro_regular"
+                    android:padding="15dp"
+                    android:text="Help"
+                    android:layout_toEndOf="@id/dashboard_badges"
+                    android:textColor="@color/headingColor"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/dashboard_Attendence"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/source_sans_pro_regular"
+                    android:padding="15dp"
+                    android:text="Attendance"
+                    android:layout_toEndOf="@id/dashboard_Help"
+                    android:textColor="@color/headingColor"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/dashboard_NOTIFICATION"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/source_sans_pro_regular"
+                    android:padding="15dp"
+                    android:text="Notifications"
+                    android:layout_toEndOf="@id/dashboard_Attendence"
+                    android:textColor="@color/headingColor"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/dotted_line"
+            android:layout_below="@+id/header"
+            android:id="@+id/line"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/line"
+            android:id="@+id/dashboardf_child_fragments"/>
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>

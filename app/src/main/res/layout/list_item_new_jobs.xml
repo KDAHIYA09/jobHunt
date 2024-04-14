@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="3"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/list_item_back">
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:clipChildren="true"
+        android:clipToOutline="true"
+        android:background="@drawable/image_back1">
+
+        <ImageView
+            android:id="@+id/new_job_iv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:clipToOutline="true"
+            android:src="@drawable/new_job" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:gravity="start"
+        android:layout_marginLeft="3dp"
+        android:layout_weight="2"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sr. UX Designer"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:padding="3dp"
+            android:fontFamily="@font/source_sans_pro_regular"
+            android:textColor="@color/headingColor"
+            android:id="@+id/new_job_name_tv"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/subheading_courcefragment"
+            android:text="Amazon"
+            android:textSize="16sp"
+            android:fontFamily="@font/source_sans_pro_regular"
+            android:id="@+id/new_job_company"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/edittexthintcolor"
+            android:textSize="16sp"
+            android:text="Remote (Anywhere)"
+            android:fontFamily="@font/source_sans_pro_regular"
+            android:id="@+id/new_job_location"/>
+
+    </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:layout_marginRight="5dp"
+       android:paddingTop="10dp"
+       android:paddingLeft="10dp"
+       android:paddingRight="10dp"
+       android:gravity="end"
+       android:layout_weight="0.5">
+
+       <TextView
+           android:id="@+id/job_posting_date"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="12/03/24"
+           android:textSize="16sp"
+           android:paddingRight="3dp"
+           android:fontFamily="@font/source_sans_pro_regular"
+           android:textColor="@color/headingColor"/>
+
+       <ImageView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/save_bookmark"
+           android:layout_marginTop="15dp"
+           android:id="@+id/bookmark"
+           android:layout_weight="0.5" />
+
+   </LinearLayout>
+
+
+</LinearLayout>

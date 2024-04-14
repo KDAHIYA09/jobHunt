@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/signupback"
+    tools:context=".dashboard_child_fragment.BadgesFragment">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="150dp"
+           android:background="@drawable/wallet_bg"
+           android:paddingTop="15dp"
+           android:id="@+id/layout1"
+           android:paddingBottom="15dp"
+           android:paddingLeft="20dp"
+           android:paddingRight="20dp">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Balance"
+               android:textColor="#D1E0FF"
+               android:textSize="16sp"
+               android:id="@+id/tv1"
+               android:fontFamily="@font/source_sans_pro_regular"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="128 GC"
+               android:layout_marginTop="5dp"
+               android:id="@+id/tv2gyancoin"
+               android:textStyle="bold"
+               android:textColor="@color/white"
+               android:textSize="20sp"
+               android:layout_below="@id/tv1"
+               android:fontFamily="@font/source_sans_pro_regular"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textSize="16sp"
+               android:fontFamily="@font/source_sans_pro_regular"
+               android:textColor="@color/white"
+               android:text="KHSHBU DAHIYA"
+               android:layout_above="@id/tv4id"
+               android:id="@+id/tv3name"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textSize="16sp"
+               android:id="@+id/tv4id"
+               android:layout_marginTop="5dp"
+               android:text="3f928dc1dzfdkasf...20d0"
+               android:textColor="@color/white"
+               android:layout_alignParentBottom="true"
+               android:fontFamily="@font/source_sans_pro_regular"/>
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/qr"
+               android:layout_alignParentRight="true"
+               android:id="@+id/ivqr"/>
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_toLeftOf="@id/tv6"
+               android:layout_alignParentBottom="true"
+               android:layout_marginRight="5dp"
+               android:src="@drawable/wallet_04"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Gyan Wallet"
+               android:id="@+id/tv6"
+               android:textSize="16sp"
+               android:textColor="#D1E0FF"
+               android:layout_marginBottom="2dp"
+               android:layout_alignParentBottom="true"
+               android:layout_alignParentRight="true"/>
+
+
+
+
+
+
+       </RelativeLayout>
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="55dp"
+           android:layout_marginTop="20dp"
+           android:id="@+id/layout2"
+           android:layout_below="@+id/layout1">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="@color/headingColor"
+               android:textSize="20sp"
+               android:text="Wallet ID"
+               android:textStyle="bold"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textSize="16sp"
+               android:id="@+id/layout2walletid"
+               android:layout_marginTop="5dp"
+               android:text="3f928dc1dzfdkasf...20d0"
+               android:textColor="@color/headingColor"
+               android:layout_alignParentBottom="true"
+               android:fontFamily="@font/source_sans_pro_regular"/>
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/copy_05"
+               android:layout_alignParentBottom="true"
+               android:layout_toRightOf="@id/layout2walletid"
+               android:layout_marginLeft="10dp"/>
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/share_qr"
+               android:layout_alignParentRight="true"
+               android:id="@+id/sareqr_iv"/>
+
+
+       </RelativeLayout>
+
+       <ImageView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:src="@drawable/dotted_line"
+           android:layout_below="@id/layout2"
+           android:id="@+id/lineseparator"
+           android:layout_marginTop="20dp"/>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="20sp"
+           android:textColor="@color/headingColor"
+           android:textStyle="bold"
+           android:text="Activity"
+           android:layout_below="@id/lineseparator"
+           android:layout_marginTop="20sp"
+           android:id="@+id/rv_heading"/>
+
+       <androidx.recyclerview.widget.RecyclerView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/rv_wallet"
+           android:layout_marginTop="20dp"
+           android:layout_below="@id/rv_heading"/>
+
+
+   </RelativeLayout>
+
+</FrameLayout>

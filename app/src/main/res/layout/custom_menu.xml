@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="@dimen/_20sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/nav_header_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/profile"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/nav_header_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15ssp"
+            android:text="Username"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/nav_header_profile"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:rotation="45"
+            android:id="@+id/closeDrawer"
+            android:src="@drawable/baseline_add_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linearLayout3">
+
+            <LinearLayout
+                android:id="@+id/custom_nav_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/side_menu_one"
+                    app:tint="@color/primary" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:fontFamily="@font/source_sans_pro_regular"
+                    android:text="Home"
+                    android:textColor="@color/primary"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/custom_nav_cources"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/side_menu_two"
+                        app:tint="@color/headingColor" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30dp"
+                        android:fontFamily="@font/source_sans_pro_regular"
+                        android:text="Courses"
+                        android:textColor="@color/headingColor"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:id="@+id/dropdownlayoutcourses"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="100dp"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/deals_arrowup1"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:visibility="visible"
+                            app:srcCompat="@drawable/arrow" />
+
+                        <ImageView
+                            android:id="@+id/deals_arrowdown2"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:rotation="180"
+                            android:visibility="invisible"
+                            app:srcCompat="@drawable/arrow" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/submenuItem_courses"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:orientation="vertical"
+                    android:paddingLeft="8dp"
+                    android:paddingBottom="5dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/nav_CoursesExplore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="Explore"
+                        android:textColor="@color/headingColor"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/nav_CoursesOngoing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="Ongoing"
+                        android:textColor="@color/headingColor"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/nav_CoursesSaved"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Saved"
+                        android:textColor="@color/headingColor"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/custom_nav_Jobs"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="start"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/side_menu_three"
+                        app:tint="@color/headingColor" />
+
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30dp"
+                        android:fontFamily="@font/source_sans_pro_regular"
+                        android:text="Jobs"
+                        android:textColor="@color/headingColor"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:id="@+id/dropdownlayoutjobs"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="100dp"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/deals_arrow1"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:visibility="visible"
+                            app:srcCompat="@drawable/arrow" />
+
+                        <ImageView
+                            android:id="@+id/deals_arrow2"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:rotation="180"
+                            android:visibility="invisible"
+                            app:srcCompat="@drawable/arrow" />
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/submenuItem_jobs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:orientation="vertical"
+                    android:paddingLeft="8dp"
+                    android:paddingBottom="5dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/nav_JobsExplore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="Explore"
+                        android:textColor="@color/headingColor"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/nav_JobsApplied"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="Applied"
+                        android:textColor="@color/headingColor"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/nav_JobsSaved"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Saved"
+                        android:textColor="@color/headingColor"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/nav_Blogs"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="start"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/side_menu_four"
+                        app:tint="@color/headingColor" />
+
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30dp"
+                        android:fontFamily="@font/source_sans_pro_regular"
+                        android:text="Blogs"
+                        android:textColor="@color/headingColor"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:id="@+id/dropdownlayoutblogs"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="100dp"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/deals_arrowdownup3"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:visibility="visible"
+                            app:srcCompat="@drawable/arrow" />
+
+                        <ImageView
+                            android:id="@+id/deals_arrowdown3"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:rotation="180"
+                            android:visibility="invisible"
+                            app:srcCompat="@drawable/arrow" />
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/submenuItem_blogs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:orientation="vertical"
+                    android:paddingLeft="8dp"
+                    android:paddingBottom="5dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/nav_BlogsExplore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="Explore"
+                        android:textColor="@color/headingColor"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/nav_BlogsSaved"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Applied"
+                        android:textColor="@color/headingColor"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/custom_nav_Saved"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="start"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/side_menu_five"
+                        app:tint="@color/headingColor" />
+
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30dp"
+                        android:fontFamily="@font/source_sans_pro_regular"
+                        android:text="Saved"
+                        android:textColor="@color/headingColor"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:id="@+id/dropdownlayoutsaved"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="100dp"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/deals_arrowup5"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:visibility="visible"
+                            app:srcCompat="@drawable/arrow" />
+
+                        <ImageView
+                            android:id="@+id/deals_arrowdown5"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:rotation="180"
+                            android:visibility="invisible"
+                            app:srcCompat="@drawable/arrow" />
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/submenuItem_saved"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:orientation="vertical"
+                    android:paddingLeft="8dp"
+                    android:paddingBottom="5dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/nav_SavedCourses"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="Courses"
+                        android:textColor="@color/headingColor"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/nav_SavedJobs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="Jobs"
+                        android:textColor="@color/headingColor"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/nav_SavedBlogs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Blogs"
+                        android:textColor="@color/headingColor"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/nav_Dashboard"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="start"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/side_menu_six"
+                        app:tint="@color/headingColor" />
+
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30dp"
+                        android:fontFamily="@font/source_sans_pro_regular"
+                        android:text="Dashboard"
+                        android:textColor="@color/headingColor"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:id="@+id/dropdownlayoutdashboard"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="100dp"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/deals_arrowup6"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:visibility="visible"
+                            app:srcCompat="@drawable/arrow" />
+
+                        <ImageView
+                            android:id="@+id/deals_arrowdown6"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:rotation="180"
+                            android:visibility="invisible"
+                            app:srcCompat="@drawable/arrow" />
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/submenuItem_dashboard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:orientation="vertical"
+                    android:paddingLeft="8dp"
+                    android:paddingBottom="5dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/nav_DashboardProfile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="Profile"
+                        android:textColor="@color/headingColor"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/nav_DashboardWallet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="Wallet"
+                        android:textColor="@color/headingColor"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/nav_DashboardBadges"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="Badges"
+                        android:textColor="@color/headingColor"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/nav_DashboardAttendance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="Attendance"
+                        android:textColor="@color/headingColor"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/nav_DashboardHelpcentre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="Helpcentre"
+                        android:textColor="@color/headingColor"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/nav_DashboardNotifications"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Notifications"
+                        android:textColor="@color/headingColor"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/nav_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/side_menu_logout"
+                    app:tint="@color/errorColor" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:fontFamily="@font/source_sans_pro_regular"
+                    android:text="Log out"
+                    android:textColor="@color/errorColor"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

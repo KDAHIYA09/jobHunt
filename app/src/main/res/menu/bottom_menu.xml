@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title=""
+        android:id="@+id/bottom_one"
+        android:icon="@drawable/footer_tab_one_selected"/>
+    <item android:title=""
+        android:id="@+id/bottom_two"
+        android:icon="@drawable/footer_tab_two_selected"/>
+    <item android:title=""
+        android:id="@+id/bottom_three"
+        android:icon="@drawable/footer_tab_three_selected"/>
+    <item android:title=""
+        android:id="@+id/bottom_four"
+        android:icon="@drawable/footer_tab_4_selected"/>
+    <item android:title=""
+        android:icon="@drawable/footer_tab_5_selected"
+        android:id="@+id/bottom_five"/>
+</menu>
